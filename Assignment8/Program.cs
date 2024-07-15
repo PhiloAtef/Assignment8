@@ -28,25 +28,33 @@ namespace Assignment8
             //Console.WriteLine(result); 
             #endregion
 
-            TypeA typeA = new TypeA(1);
-            typeA.A = 2;
+            #region Binding
+            //TypeA typeA = new TypeA(1);
+            //typeA.A = 2;
 
-            typeA.MyFunc01();
-            typeA.MyFunc02();
+            //typeA.MyFunc01();
+            //typeA.MyFunc02();
 
-            TypeB typeB = new TypeB(1,2);
+            //TypeB typeB = new TypeB(1,2);
 
-            typeB.A = 3;
-            typeB.B = 4;
-            typeB.MyFunc01();
-            typeB.MyFunc02();
+            //typeB.A = 3;
+            //typeB.B = 4;
+            //typeB.MyFunc01();
+            //typeB.MyFunc02();
 
-            //binding 
+            ////binding 
 
-            TypeA refbase = new TypeB(1, 2);
-            refbase.MyFunc01();
-            refbase.MyFunc02();
+            //TypeA refbase = new TypeB(1, 2);
+            //refbase.MyFunc01();
+            //refbase.MyFunc02(); 
+            #endregion
 
+            #region Not Binding
+            TypeA typeA = new TypeB(1, 2);
+            typeA = new TypeA(1);
+
+            TypeB typeB = (TypeB)typeA; //casting 
+            #endregion
 
         }
 
