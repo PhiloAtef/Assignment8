@@ -50,10 +50,10 @@ namespace Assignment8
             #endregion
 
             #region Not Binding
-            TypeA typeA = new TypeB(1, 2);
-            typeA = new TypeA(1);
+            //TypeA typeA = new TypeB(1, 2);
+            //typeA = new TypeA(1);
 
-            TypeB typeB = (TypeB)typeA; //casting 
+            //TypeB typeB = (TypeB)typeA; //casting 
             #endregion
 
         }
