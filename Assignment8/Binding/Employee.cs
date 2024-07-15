@@ -19,7 +19,7 @@ namespace Assignment8.Binding
             Console.WriteLine("I am Employee");
         }
 
-        public void MyFunc02()
+        public virtual void MyFunc02()
         {
             Console.WriteLine($"ID = {ID}, Name = {Name}, Age = {Age}");
         }
