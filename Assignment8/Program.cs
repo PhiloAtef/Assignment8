@@ -22,12 +22,12 @@ namespace Assignment8
         //} 
         #endregion
 
-        public static void ProcessEmployee(FullTimeEmployee fullTimeEmployee)
+        public static void ProcessEmployee(Employee employee)
         {
-            if (fullTimeEmployee != null) 
+            if (employee != null) 
             {
-                fullTimeEmployee.MyFunc01();
-                fullTimeEmployee.MyFunc02();
+                employee.MyFunc01();
+                employee.MyFunc02();
             }
         }
 
@@ -66,9 +66,27 @@ namespace Assignment8
             //TypeB typeB = (TypeB)typeA; //casting 
             #endregion
 
-            FullTimeEmployee fullTimeEmployee = new FullTimeEmployee() { Name = "example", ID = 10, Age = 20, Salary = 3000 };
+            Employee fullTimeEmployee = new FullTimeEmployee() { Name = "example", ID = 10, Age = 20, Salary = 3000 };
+
+            Employee partTimeEmployee = new PartTimeEmployee() { Name = "example2", ID = 12, Age = 22, HourRate = 3200 };
 
             ProcessEmployee(fullTimeEmployee);
+            ProcessEmployee(partTimeEmployee);
+
+            Employee employee = new Employee();
+            FullTimeEmployee fullTimeEmployee2 = new FullTimeEmployee();
+            PartTimeEmployee partTimeEmployee2 = new PartTimeEmployee();
+            Employee employee1 = new FullTimeEmployee();
+            Employee employee2 = new PartTimeEmployee();
+
+            ProcessEmployee(employee);
+            ProcessEmployee(fullTimeEmployee2);
+            ProcessEmployee(partTimeEmployee2);
+            ProcessEmployee(employee1);
+            ProcessEmployee(employee2);
+
+
+            
 
         }
 
