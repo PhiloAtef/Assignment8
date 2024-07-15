@@ -15,5 +15,16 @@ namespace Assignment8.Overriding
                 B = _B;
         }
 
+        public new void MyFunc01()
+        {
+            Console.WriteLine("I am base");
+        }
+
+        public override void MyFunc02()
+        {
+            Console.WriteLine($"TypeB = {B}");
+        }
+
+
     }
 }

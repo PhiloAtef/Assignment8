@@ -20,7 +20,7 @@ namespace Assignment8.Overriding
             Console.WriteLine("I am base");
         }
 
-        public void MyFunc02()
+        public virtual void MyFunc02()
         {
             Console.WriteLine($"TypeA = {A}");
         }

@@ -33,6 +33,23 @@ namespace Assignment8
 
             typeA.MyFunc01();
             typeA.MyFunc02();
+
+            TypeB typeB = new TypeB(1,2);
+
+            typeB.A = 3;
+            typeB.B = 4;
+            typeB.MyFunc01();
+            typeB.MyFunc02();
+
+            //binding 
+
+            TypeA refbase = new TypeB(1, 2);
+            refbase.MyFunc01();
+            refbase.MyFunc02();
+
+
         }
+
+
     }
 }
