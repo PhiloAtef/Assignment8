@@ -66,27 +66,65 @@ namespace Assignment8
             //TypeB typeB = (TypeB)typeA; //casting 
             #endregion
 
-            Employee fullTimeEmployee = new FullTimeEmployee() { Name = "example", ID = 10, Age = 20, Salary = 3000 };
+            #region Employee binding
+            //Employee fullTimeEmployee = new FullTimeEmployee() { Name = "example", ID = 10, Age = 20, Salary = 3000 };
 
-            Employee partTimeEmployee = new PartTimeEmployee() { Name = "example2", ID = 12, Age = 22, HourRate = 3200 };
+            //Employee partTimeEmployee = new PartTimeEmployee() { Name = "example2", ID = 12, Age = 22, HourRate = 3200 };
 
-            ProcessEmployee(fullTimeEmployee);
-            ProcessEmployee(partTimeEmployee);
+            //ProcessEmployee(fullTimeEmployee);
+            //ProcessEmployee(partTimeEmployee);
 
-            Employee employee = new Employee();
-            FullTimeEmployee fullTimeEmployee2 = new FullTimeEmployee();
-            PartTimeEmployee partTimeEmployee2 = new PartTimeEmployee();
-            Employee employee1 = new FullTimeEmployee();
-            Employee employee2 = new PartTimeEmployee();
+            //Employee employee = new Employee();
+            //FullTimeEmployee fullTimeEmployee2 = new FullTimeEmployee();
+            //PartTimeEmployee partTimeEmployee2 = new PartTimeEmployee();
+            //Employee employee1 = new FullTimeEmployee();
+            //Employee employee2 = new PartTimeEmployee();
 
-            ProcessEmployee(employee);
-            ProcessEmployee(fullTimeEmployee2);
-            ProcessEmployee(partTimeEmployee2);
-            ProcessEmployee(employee1);
-            ProcessEmployee(employee2);
+            //ProcessEmployee(employee);
+            //ProcessEmployee(fullTimeEmployee2);
+            //ProcessEmployee(partTimeEmployee2);
+            //ProcessEmployee(employee1);
+            //ProcessEmployee(employee2); 
+            #endregion
 
+            #region More practice on Binding
+            //TypeA typeA = new TypeC(1, 2, 3);
+            //typeA.A = 1;
 
-            
+            //typeA.MyFunc01();
+            //typeA.MyFunc02();
+
+            //TypeB typeB = new TypeC(1, 2, 3);
+            //typeB.A = 1;
+            //typeB.B = 1;
+
+            //typeB.MyFunc01();
+            //typeB.MyFunc02();
+
+            //TypeA typeA = new TypeE(1, 2, 3, 4, 5);
+            //TypeB typeB = new TypeE(1, 2, 3, 4, 5);
+            //TypeC typeC = new TypeE(1, 2, 3, 4, 5);
+            //TypeD typeD = new TypeE(1, 2, 3, 4, 5);
+            //TypeE typeE = new TypeE(1, 2, 3, 4, 5);
+
+            //typeA.MyFunc02();
+            //typeB.MyFunc02();
+            //typeC.MyFunc02();
+            //typeD.MyFunc02();
+            //typeE.MyFunc02(); 
+            #endregion
+
+            #region Interface
+            // IMyType myType = new MyType();
+            // myType.MyFunc();
+            // myType.Age = 40;
+            // myType.Print();
+
+            // MyType myType2 = new MyType();
+
+            // myType2.Print(); 
+            #endregion
+
 
         }
 
