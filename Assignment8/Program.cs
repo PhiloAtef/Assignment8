@@ -1,4 +1,5 @@
-﻿using Assignment8.Overriding;
+﻿using Assignment8.Binding;
+using Assignment8.Overriding;
 
 namespace Assignment8
 {
@@ -20,6 +21,15 @@ namespace Assignment8
         //    return x + y + z + d;
         //} 
         #endregion
+
+        public static void ProcessEmployee(FullTimeEmployee fullTimeEmployee)
+        {
+            if (fullTimeEmployee != null) 
+            {
+                fullTimeEmployee.MyFunc01();
+                fullTimeEmployee.MyFunc02();
+            }
+        }
 
         static void Main(string[] args)
         {
@@ -56,7 +66,9 @@ namespace Assignment8
             //TypeB typeB = (TypeB)typeA; //casting 
             #endregion
 
+            FullTimeEmployee fullTimeEmployee = new FullTimeEmployee() { Name = "example", ID = 10, Age = 20, Salary = 3000 };
 
+            ProcessEmployee(fullTimeEmployee);
 
         }
 
