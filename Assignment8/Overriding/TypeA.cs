@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment8.Overriding
 {
-    internal class TypeA
+    public class TypeA
     {
         public int A { get; set; }
 
